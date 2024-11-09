@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -euf
+
+export PYTHONPATH=/opt/packages
+cd /opt/code
+python3 -m uvicorn --port 8080 main:app

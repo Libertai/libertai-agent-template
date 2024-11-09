@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "libertai-agent"
+version = "0.1.0"
+description = "Template to create a LibertAI agent"
+authors = ["LibertAI team <hello@libertai.io>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.11, <3.12"
+libertai-agents = "0.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

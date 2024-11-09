@@ -1,0 +1,6 @@
+/venv
+/dist
+
+.env.*
+!.env.libertai.example
+!.env.example
