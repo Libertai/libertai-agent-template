@@ -7,8 +7,8 @@ readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
-python = ">=3.11, <3.12"
-libertai-agents = "0.0.1"
+python = "^3.10"
+libertai-agents = "0.1.0"
 
 [build-system]
 requires = ["poetry-core"]

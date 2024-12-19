@@ -1,4 +1,5 @@
 from libertai_agents.agents import ChatAgent
+from libertai_agents.interfaces.tools import Tool
 from libertai_agents.models import get_model
 
 
@@ -16,7 +17,7 @@ async def get_current_temperature(location: str, unit: str) -> float:
 
 agent = ChatAgent(model=get_model("NousResearch/Hermes-3-Llama-3.1-8B"),
                   system_prompt="You are a helpful assistant",
-                  tools=[get_current_temperature])
+                  tools=[Tool.from_function(get_current_temperature)])
 
 app = agent.app
 
