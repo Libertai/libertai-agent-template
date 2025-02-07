@@ -8,7 +8,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
-libertai-agents = "0.1.0"
+libertai-agents = "^0.1.2"
 
 [build-system]
 requires = ["poetry-core"]
