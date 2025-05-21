@@ -1,0 +1,20 @@
+name: Deploy agent action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-agent:
+    name: "Agent deployment"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "libertai deployment"
+        uses: libertai/deploy-agent-action@v0.1.0
+        with:
+          agent-id: ${{ secrets.AGENT_ID }}
+          agent-secret: ${{ secrets.AGENT_SECRET }}
+          dependency-management-tool: "poetry"
+          python-version: 3.13.3
+          usage-type: "fastapi"
